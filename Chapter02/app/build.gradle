@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.zz.chapter02"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+//    // 签名配置
+//    signingConfigs{
+//        release{}
+//        debug{}
+//    }
+
+    // 构建配置
+    buildTypes {
+        // 正式版配置
+        release {
+            minifyEnabled true // 开启混淆
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.release // 签名配置
+
+            buildConfigField "String","API_URL", "\"http://release.zz.com\""
+            buildConfigField "boolean", "LOGGABLE", "false" // TMD，boolean值也要加引号
+            resValue "string", "str_name", "Example_release"
+
+            buildConfigField ("boolean","TEST_BOOL", "true") // 带括号的写法
+        }
+
+        // 开发版配置
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.debug // 签名配置
+            versionNameSuffix '-debug' // 版本名后缀
+
+            buildConfigField "String", "API_URL", "\"http://debug.zz.com\""
+            buildConfigField "boolean", "LOGGABLE", "true"
+            resValue "string", "str_name", "Example_debug"
+
+            buildConfigField ("boolean","TEST_BOOL", "false")
+
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.0.0-beta1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:0.5'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2'
+}
