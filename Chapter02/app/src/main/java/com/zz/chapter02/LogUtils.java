@@ -8,8 +8,8 @@ import android.util.Log;
 public class LogUtils {
     public static final boolean DEBUG = BuildConfig.LOGGABLE;
 
-    public static void i (String tag, String msg){
-        if(DEBUG){
+    public static void i(String tag, String msg) {
+        if (DEBUG) {
             Log.i(tag, msg);
         }
     }
