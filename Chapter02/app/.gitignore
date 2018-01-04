@@ -2,3 +2,4 @@ build/
 .externalNativeBuild/
 *.iml
 apk/
+*.jks

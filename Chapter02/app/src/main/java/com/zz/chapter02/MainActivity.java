@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         ((TextView) findViewById(R.id.text02)).setText(Boolean.toString(BuildConfig.LOGGABLE));
         ((TextView) findViewById(R.id.text03)).setText(R.string.str_name);
         ((TextView) findViewById(R.id.text04)).setText(Boolean.toString(BuildConfig.TEST_BOOL));
+        ((TextView) findViewById(R.id.text05)).setText(BuildConfig.VERSION_NAME);
 
         LogUtils.i("haha", "Hello");
         Log.i("hehe", "World");
