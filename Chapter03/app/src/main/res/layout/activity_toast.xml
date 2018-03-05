@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.zz.chapter03.ToastActivity">
+
+    <Button
+        android:id="@+id/bt_normal_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="弹出最普通的Toast"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/bt_margin_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="弹出通过Margin修改的Toast"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/bt_gravity_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="弹出通过Gravity修改的Toast"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/bt_custom_code_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="弹出代码自定义的Toast"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/bt_custom_xml_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="弹出XML自定义的Toast"
+        tools:ignore="HardcodedText"/>
+</LinearLayout>

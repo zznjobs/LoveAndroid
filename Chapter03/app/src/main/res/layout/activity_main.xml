@@ -1,19 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.zz.chapter03.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_test_imageview"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:background="@android:color/holo_blue_bright"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Test ImageView"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText"/>
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/tv_test_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Test RelativeLayout"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText"/>
+
+    <TextView
+        android:id="@+id/tv_test_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Test FrameLayout"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText"/>
+
+    <TextView
+        android:id="@+id/tv_test_gridlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Test GridLayout"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText"/>
+
+    <TextView
+        android:id="@+id/tv_test_coordinatorlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cccc00"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Test CoordinatorLayout"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText"/>
+
+    <TextView
+        android:id="@+id/tv_test_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#347825"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Test Toast"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText"/>
+
+    <TextView
+        android:id="@+id/tv_test_snackbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#234762"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Test SnackBar"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText"/>
+    <TextView
+        android:id="@+id/tv_test_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#870542"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Test Click"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText"/>
+    <TextView
+        android:id="@+id/tv_test_alertdialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#278"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Test AlertDialog"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText"/>
+    <TextView
+        android:id="@+id/tv_test_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6230"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Test Progress"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText"/>
+
+</LinearLayout>

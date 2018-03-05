@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zz.chapter03.AlertDialogActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="一般对话框"
+        android:onClick="normalDialog"
+        tools:ignore="HardcodedText"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="列表对话框"
+        android:onClick="listDialog"
+        tools:ignore="HardcodedText"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="单选对话框"
+        android:onClick="singleDialog"
+        tools:ignore="HardcodedText"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="多选对话框"
+        android:onClick="multiDialog"
+        tools:ignore="HardcodedText"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义对话框"
+        android:onClick="customDialog"
+        tools:ignore="HardcodedText"/>
+
+</LinearLayout>

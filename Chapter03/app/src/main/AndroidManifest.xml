@@ -16,6 +16,26 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".RelativeLayoutTestActivity">
+        </activity>
+        <activity android:name=".ImageViewTestActivity">
+        </activity>
+        <activity android:name=".FrameLayoutActivity">
+        </activity>
+        <activity android:name=".GridLayoutActivity">
+        </activity>
+        <activity android:name=".CoordinatorLayoutActivity">
+        </activity>
+        <activity android:name=".ToastActivity">
+        </activity>
+        <activity android:name=".SnackBarActivity">
+        </activity>
+        <activity android:name=".ClickActivity">
+        </activity>
+        <activity android:name=".AlertDialogActivity">
+        </activity>
+        <activity android:name=".ProgressDialogActivity">
+        </activity>
     </application>
 
 </manifest>

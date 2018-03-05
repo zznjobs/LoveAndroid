@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zz.chapter03.FrameLayoutActivity">
+
+    <!-- P56:自API21后，Button无论写在前面还是后面，都会显示在最前面 -->
+    <!-- 因为Button本来就是与用户交互的控件，不允许遮挡 -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="测试最底层的Button"
+        tools:ignore="HardcodedText"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:background="@android:color/holo_red_light"/>
+</FrameLayout>
