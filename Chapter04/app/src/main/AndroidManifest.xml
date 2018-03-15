@@ -1,11 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
           package="com.zz.chapter04">
 
+    <!-- 打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <!-- allowBackup是谷歌官方的一项服务，即可以在系统变更时，把App的配置备份至谷歌服务器，国内无用 -->
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"/>
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!-- excludeFromRecents为true时，该根Activity销毁后，该应用即不可显示在手机最近任务列表中 -->
+        <activity
+            android:name=".MainActivity"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Demo2Activity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <action android:name="com.zz.START_ACTIVITY_BY_IMPLICIT_INTENT"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 接收文本分享的Activity -->
+        <activity android:name=".ReceiveShareActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <!-- 表示要接收的分享类型是简单文本 -->
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ReceiveDataActivity">
+        </activity>
+        <activity android:name=".SendDataActivity">
+        </activity>
+        <activity android:name=".CallActivity">
+        </activity>
+        <activity android:name=".LifeActivity">
+        </activity>
+        <activity android:name=".LaunchActivity">
+        </activity>
+        <activity android:name=".NormalModeActivity">
+        </activity>
+        <activity android:name=".BaseActivity">
+        </activity>
+        <activity
+            android:name=".ActionBarActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        </activity>
+
+        <!-- 使用ToolBar需要先隐藏ActionBar -->
+        <activity
+            android:name=".ToolBarActivity"
+            android:theme="@style/ToolBarTheme">
+        </activity>
+        <activity
+            android:name=".NavigationDrawerActivity"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+    </application>
+
 </manifest>

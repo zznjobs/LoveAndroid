@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zz.chapter04.MainActivity">
+
+    <Button
+        android:id="@+id/bt_start_demo2_ac_by_explicit_intent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Demo2Activity By Explicit Intent"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/bt_start_demo2_ac_by_implicit_intent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Demo2Activity By Implicit Intent"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/bt_start_send_data_ac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start SendDataActivity"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/bt_start_call_ac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start CallActivity"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/bt_start_life_ac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start LifeActivity"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/bt_start_launch_ac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start LaunchActivity"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/bt_start_actionbar_ac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start ActionBarActivity"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/bt_start_toolbar_ac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start ToolBarActivity"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/bt_start_navigation_drawer_ac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="StartNavigationDrawerActivity"
+        tools:ignore="HardcodedText"/>
+
+</LinearLayout>

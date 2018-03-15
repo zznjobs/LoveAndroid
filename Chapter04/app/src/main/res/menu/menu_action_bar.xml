@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools">
+
+    <!--orderInCategory 显示优先级，值越大优先级越低-->
+    <!---->
+    <!--showAsAction表示显示的位置-->
+    <!--never 从不显示，始终被折叠-->
+    <!--always 始终显示-->
+    <!--ifRoom 有空间时就显示，否则被折叠-->
+    <!--withText 显示图标的同时显示标题，部分机型会有问题-->
+    <item
+        android:id="@+id/item_action_settings"
+        android:title="设置"
+        app:showAsAction="never"
+        tools:ignore="HardcodedText"/>
+
+    <item
+        android:id="@+id/item_action_bt1"
+        android:icon="@mipmap/ic_launcher_round"
+        android:orderInCategory="100"
+        android:title="按钮1"
+        app:showAsAction="ifRoom|withText"
+        tools:ignore="HardcodedText"/>
+
+    <item
+        android:id="@+id/item_action_bt2"
+        android:icon="@mipmap/ic_launcher"
+        android:orderInCategory="100"
+        android:title="按钮2"
+        app:showAsAction="always"
+        tools:ignore="HardcodedText"/>
+</menu>
