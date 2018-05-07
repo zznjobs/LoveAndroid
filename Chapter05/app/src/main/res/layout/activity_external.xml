@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zz.chapter05.ExternalActivity"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:id="@+id/tv_sd_space_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/bt_check_sd_writable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="检查SD卡是否可写"/>
+
+    <Button
+        android:id="@+id/bt_check_sd_readable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="检查SD卡是否可读"
+        />
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        tools:ignore="LabelFor,TextFields"/>
+
+    <Button
+        android:id="@+id/bt_save_to_sd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存内容到SD卡根目录文件"
+        />
+</LinearLayout>
